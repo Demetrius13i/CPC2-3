@@ -6,27 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
-        android:id="@+id/tableforpics"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -45,10 +24,10 @@
             app:srcCompat="@drawable/fon_lightning1" />
 
         <ImageView
-            android:id="@+id/ava"
+            android:id="@+id/avatarka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ava_minion1" />
+            app:srcCompat="@drawable/avaminion2" />
 
 
     </FrameLayout>
@@ -81,7 +60,7 @@
             android:id="@+id/Fathername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Отчество"
+            android:text="Возраст"
             android:textColor="@color/verygreen"
             android:textSize="20sp"/>
     </LinearLayout>
@@ -131,5 +110,27 @@
         android:layout_height="match_parent">
 
     </TableLayout>
+
+<TableLayout
+android:id="@+id/tableforpics"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
