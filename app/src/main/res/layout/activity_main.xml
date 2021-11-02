@@ -27,51 +27,55 @@
             android:id="@+id/avatarka"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/avaminion2" />
+            app:srcCompat="@drawable/avaminion2"
+             />
 
 
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="100dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/avalayout"
-        android:id="@id/FIO">
+        android:id="@id/FIO"
+        android:layout_marginTop="8dp">
 
         <TextView
             android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Имя"
+            android:text="@string/name"
             android:textColor="@color/red"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/Familia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Фамилия"
+            android:text="@string/lastname"
             android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/Fathername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Возраст"
+            android:text="@string/ages"
             android:textColor="@color/verygreen"
             android:textSize="20sp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/FIO"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        >
 
         <TextView
             android:layout_width="match_parent"
@@ -80,7 +84,7 @@
             android:textColor="@color/greenblack"
             android:text="@string/Dostijenya"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:gravity="center">
 
         <TextView
             android:id="@+id/aboutme"
@@ -89,7 +93,7 @@
             android:text="@string/Meabout"
             android:textColor="@color/greenblack"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/projects"
@@ -98,39 +102,33 @@
             android:text="@string/Projects"
             android:textColor="@color/greenblack"
             android:textSize="20sp"
-            android:layout_weight="1"/>
+            android:gravity="center"/>
 
     </TextView>
 
 
 </LinearLayout>
 
-    <TableLayout
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridpics"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/FIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    </TableLayout>
 
-<TableLayout
-android:id="@+id/tableforpics"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
 
-<TableRow
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
 
-<TableRow
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
 
-<TableRow
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
 
-<TableRow
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
-</TableLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
