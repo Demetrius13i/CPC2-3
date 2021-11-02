@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TableLayout
+        android:id="@+id/tableforpics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="160dp"
@@ -60,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Отчество"
-            android:textColor="@color/red"
+            android:textColor="@color/verygreen"
             android:textSize="20sp"/>
     </LinearLayout>
 
@@ -73,30 +95,32 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/Достижения"
-            android:textColor="@color/green"
-            android:text="Достижения"
+            android:textColor="@color/greenblack"
+            android:text="@string/Dostijenya"
             android:textSize="20sp"
+            android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/aboutme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="О Себе"
-            android:textColor="@color/green"
-            android:textSize="20sp" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Meabout"
+            android:textColor="@color/greenblack"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/projects"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Проекты"
-            android:textColor="@color/green"
-            android:textSize="20sp" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Projects"
+            android:textColor="@color/greenblack"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
 
-        ?
     </TextView>
 
 
@@ -106,21 +130,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
