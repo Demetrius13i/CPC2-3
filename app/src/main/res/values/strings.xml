@@ -3,7 +3,7 @@
     <string name="Dostijenya">Достижения</string>
     <string name="Meabout">О Себе</string>
     <string name="Projects">Проекты</string>
-    <string name="ages">Возраст</string>
-    <string name="lastname">Фамилия</string>
-    <string name="name">Имя</string>
+    <string name="ages">Возраст: 32</string>
+    <string name="lastname">Фамилия: Савельев</string>
+    <string name="name">Имя: Дмитрий</string>
 </resources>
