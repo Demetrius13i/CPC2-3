@@ -159,9 +159,28 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
+    <FrameLayout
+        android:id="@+id/startscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onStartButtonClick"
+            android:visibility="gone"
+            app:srcCompat="@drawable/switchstart2" />
 
+        <ImageView
+            android:id="@+id/backgroundstart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#D1D6D6"
+            android:visibility="gone" />
 
+</FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
