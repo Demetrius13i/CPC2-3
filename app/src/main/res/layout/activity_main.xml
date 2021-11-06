@@ -164,21 +164,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/startButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:onClick="onStartButtonClick"
-            android:visibility="gone"
-            app:srcCompat="@drawable/switchstart2" />
-
         <ImageView
-            android:id="@+id/backgroundstart"
+            android:id="@+id/background_start"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="#D1D6D6"
-            android:visibility="gone" />
+            android:visibility="visible"
+             />
+
+        <ImageButton
+            android:id="@+id/start_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/switchstart2"
+            android:visibility="visible"
+            />
 
 </FrameLayout>
 

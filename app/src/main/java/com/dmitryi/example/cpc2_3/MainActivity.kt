@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
-
+import androidx.core.view.isInvisible
 
 
 class MainActivity : AppCompatActivity() {
@@ -14,16 +14,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var backgroundstart = (ImageView).findViewById(R.id.backgroundstart)
-        var startButton = (ImageButton).findViewById(R.id.startButton)
-    }
 
-    public fun onStartButtonClick(View view: View) {
-        startButton.setVisibility(View.GONE)
-        backgroundstart.setVisibility(View.GONE)
-        startButton.setClickable(false)
-    }
+        val backGround: ImageView = findViewById(R.id.background_start)
+        val startButton: ImageButton = findViewById(R.id.start_Button)
 
+        startButton.setOnClickListener {
+            backGround.visibility = backGround.isInvisible
+            startButton.visibility = startButton.isInvisible
+        }
+
+    }
 
 
 }
