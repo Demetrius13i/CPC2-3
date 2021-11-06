@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="FIO" type="id">FIO</item>
-    <item name="pickcha1" type="id" />
-    <item name="pickha1" type="id">pickcha1</item>
-    <item name="pickha2" type="id">pickha2</item>
+    <item name="FIO" type="id">fio</item>
+    <item name="pickha1" type="id">pickha1</item>
 </resources>

@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         val startButton: ImageButton = findViewById(R.id.start_Button)
 
         startButton.setOnClickListener {
-            backGround.visibility = backGround.isInvisible
-            startButton.visibility = startButton.isInvisible
+            backGround.visibility = View.GONE
+            startButton.visibility = View.GONE
         }
 
     }
